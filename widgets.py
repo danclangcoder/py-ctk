@@ -2,14 +2,7 @@ import customtkinter
 
 
 class Button(customtkinter.CTkButton):
-    def __init__(
-        self,
-        parent,
-        width=None,
-        height=None,
-        text=None,
-        command=None,
-    ):
+    def __init__(self, parent, text=None, command=None):
         super().__init__(
             parent,
             width=100,
@@ -18,7 +11,7 @@ class Button(customtkinter.CTkButton):
             hover_color=("#1D3D6E", "#22427E"),
             corner_radius=10,
         )
-        self.configure(width=width, height=height, text=text, command=command)
+        self.configure(text=text, command=command)
 
 
 class Entry(customtkinter.CTkEntry):
